@@ -1,0 +1,25 @@
+  <div class="banner">
+    <div class="content p-20">
+    <h1>PotionZ</h1>
+    <h3>Find the best Alchemy Scrolls right here !</h3>
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+      <div class="card m-2" style="width: 18rem;">
+        <div class="card-body">
+        <h3 class="card-title"><%= cocktail.name %></h3>
+        <p class="card-text"><% cocktail.doses.each do |dose| %>
+          <li>
+          <%= dose.ingredient.name %>
+          </li>
+        <% end %>
+        </p>
+            <%= link_to 'Alchemy', cocktail_path(cocktail) , class: "btn btn-primary"%>
+        </div>
+      </div>
+    <% end %>
+    </div>
+    <%= link_to 'Mix substances', new_cocktail_path , class: "btn btn-primary m-2" %>
+  </div>
+
+    </div>
+

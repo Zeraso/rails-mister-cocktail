@@ -11,3 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.banner {
+  background-image: asset-url('paul.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}

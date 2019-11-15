@@ -1,22 +1,16 @@
   <div class="banner">
     <div class="d-flex align-items-center flex-column">
-    <h1>I don't care anymore</h1>
-    <h2>do what you want and don't bother me. Thank you <3</h2>
+    <h1>Get Wasted</h1>
+    <h2>Wanna get wasted tonight ? You're in the right place! 🍸</h2>
   </div>
 </div>
 
 <div class="container">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
-      <div class="card m-2" style="width: 18rem;">
+      <div class="card m-3" style="width: 18rem;">
         <div class="card-body">
         <h3 class="card-title"><%= cocktail.name %></h3>
-        <p class="card-text"><% cocktail.doses.each do |dose| %>
-          <li>
-          <%= dose.ingredient.name %>
-          </li>
-        <% end %>
-        </p>
         <div class="scroll">
             <%= link_to 'Recipe', cocktail_path(cocktail) , class: "btn btn-primary"%>
 
@@ -26,8 +20,4 @@
     <% end %>
     </div>
   </div>
-<div class="shit">
-
-      <%= link_to 'Make yours !', new_cocktail_path , class: "btn btn-primary m-2" %>
-</div>
-
+<%= link_to 'Make yours !', new_cocktail_path , class: "btn btn-primary m-2" %>

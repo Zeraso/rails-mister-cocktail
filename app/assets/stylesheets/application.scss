@@ -53,13 +53,13 @@ body {
 }
 
 .card {
-  background-image: asset-url('cocktail.webp');
+  background-image: asset-url('https://source.unsplash.com/1600x900/?cocktails');
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   text-align: center;
   color: #fcfcfc;
-
+  border-color: #fcfcfc;
 }
 
 .btn {

@@ -14,8 +14,67 @@
 
 
 .banner {
-  background-image: asset-url('paul.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url('bar.jpg');
   background-size: cover;
   background-position: center;
+  box-shadow: 0 0 15px rgba(0,0,0,1);
   padding: 150px 0;
+  height: 500px;
+}
+
+h1, h2 {
+  color: #fcfcfc;
+  font-weight: bold;
+}
+
+
+.fas {
+  color: #d63230;
+}
+
+.fas:hover {
+  opacity: 0.5;
+  text-decoration: none;
+  color: #d63230;
+}
+
+.container {
+  margin-top: -50px;
+}
+
+.row {
+  justify-content: center;
+}
+
+body {
+  background-color: #fcfcfc;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background-image: asset-url('cocktail.webp');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fcfcfc;
+
+}
+
+.btn {
+  background-color: #fcfcfc;
+  color: black;
+  border-style: none;
+}
+
+.btn:hover {
+  background-color : black;
+  color:white
+}
+
+.shit .btn {
+  border: solid;
+  border-color: black;
+
 }

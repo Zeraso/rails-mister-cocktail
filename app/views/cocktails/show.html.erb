@@ -23,5 +23,9 @@
 
 <% end %>
 
+<%= link_to "Delete Potion", cocktail_path(@cocktail),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
 <%= link_to 'Homepage', cocktails_path, class: "btn btn-primary m-2" %>
+
 
